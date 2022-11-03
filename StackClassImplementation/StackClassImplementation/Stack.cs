@@ -15,7 +15,6 @@ namespace StackClassImplementation
         public Stack()
         {
             Count = 0;
-
         }
 
         public void Push(T item)
@@ -27,7 +26,6 @@ namespace StackClassImplementation
             {
                 addedItem.Next = top;
                 top = addedItem;
-
             }
             Count++;
         }
@@ -61,8 +59,6 @@ namespace StackClassImplementation
                 throw new InvalidOperationException("Empty Stack");
             T topItem = top.Data;
             return topItem;
-
-
         }
 	
         public void Clear()
