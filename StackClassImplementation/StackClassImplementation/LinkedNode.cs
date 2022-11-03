@@ -1,6 +1,5 @@
 using System;
 
-
 namespace StackClassImplementation
 {
 class LinkedNode<T>
