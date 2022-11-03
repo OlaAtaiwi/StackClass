@@ -74,10 +74,10 @@ namespace StackClassImplementation
 
         private static void FillEmpStack(Stack<Employee> empStack)
         {
-            string[] fname = { "Liam ", "David ", "Henry","Michael", "Oliver ", "James ",
+            var fname = new string[] { "Liam ", "David ", "Henry","Michael", "Oliver ", "James ",
                 "Jack ", "Daniel", "Mateo", "Robert" };
-            string[] lname = { "Alberty ", "Alexander ", "Bell", "Brooks", "Hill", "Robinson", "Wattson", "Walker" };
-            string[] Departments = { "HR", "Sales", "Financial", "Administrative" };
+            var lname = new string[] { "Alberty ", "Alexander ", "Bell", "Brooks", "Hill", "Robinson", "Wattson", "Walker" };
+            var Departments = new string[] { "HR", "Sales", "Financial", "Administrative" };
             Random rnd = new Random();
             for (int i = 0; i < 20; i++)
                 empStack.Push(new Employee()
