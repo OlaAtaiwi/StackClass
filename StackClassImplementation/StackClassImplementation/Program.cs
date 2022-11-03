@@ -18,7 +18,6 @@ namespace StackClassImplementation
             {
                 Console.WriteLine("Please enter numbers only");
             }
-
         }
 
         private static void CallingProperMethod(int ch)
@@ -75,10 +74,10 @@ namespace StackClassImplementation
 
         private static void FillEmpStack(Stack<Employee> empStack)
         {
-            String[] fname = { "Liam ", "David ", "Henry","Michael", "Oliver ", "James ",
+            string[] fname = { "Liam ", "David ", "Henry","Michael", "Oliver ", "James ",
                 "Jack ", "Daniel", "Mateo", "Robert" };
             string[] lname = { "Alberty ", "Alexander ", "Bell", "Brooks", "Hill", "Robinson", "Wattson", "Walker" };
-            String[] Departments = { "HR", "Sales", "Financial", "Administrative" };
+            string[] Departments = { "HR", "Sales", "Financial", "Administrative" };
             Random rnd = new Random();
             for (int i = 0; i < 20; i++)
                 empStack.Push(new Employee()
@@ -87,7 +86,6 @@ namespace StackClassImplementation
                     LastName = lname[rnd.Next(lname.Length)],
                     Department = Departments[rnd.Next(Departments.Length)]
                 });
-
         }
 
         private static void FillIntStack(Stack<int> intStack)
