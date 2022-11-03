@@ -11,16 +11,19 @@ namespace StackClassImplementation
     {
         public T Data { get; set; }
         public LinkedNode<T> Next { get; set; }
+	
         public LinkedNode()
         {
             Data = default(T);
             Next = null;
         }
+	
         public LinkedNode(T data)
         {
             Data = data;
             Next = null;
         }
+	
         public LinkedNode(T data, LinkedNode<T> next)
         {
             Data = data;
@@ -31,6 +34,7 @@ namespace StackClassImplementation
     {
         public int Count { get; private set; }
         private LinkedNode<T> top;
+	
         public Stack()
         {
             Count = 0;
@@ -50,6 +54,7 @@ namespace StackClassImplementation
             }
             Count++;
         }
+	
         public T Pop()
         {
             if (top == null)
@@ -72,6 +77,7 @@ namespace StackClassImplementation
             }
             Console.WriteLine("______________________________");
         }
+	
         public T Peak()
         {
             if (top == null)
@@ -81,6 +87,7 @@ namespace StackClassImplementation
 
 
         }
+	
         public void Clear()
         {
             top = null;
